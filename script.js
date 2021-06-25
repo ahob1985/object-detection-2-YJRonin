@@ -32,7 +32,7 @@ function draw() {
   if(isModelReady) {
     image(video, 0, 0);
     detector.detect(canvas, gotResults);
-    for(let i = 0, i < detections.legnth; i++) {
+    for(let i = 0; i < detections.length; i++) {
       drawLabel(detections[i]);
     }
   }
